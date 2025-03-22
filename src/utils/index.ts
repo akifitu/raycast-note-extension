@@ -1,9 +1,8 @@
 import { Index } from "@upstash/vector";
 
 // Upstash Vector credentials
-const UPSTASH_VECTOR_URL = "https://cosmic-marmot-49561-us1-vector.upstash.io";
-const UPSTASH_VECTOR_TOKEN =
-  "ABcFMGNvc21pYy1tYXJtb3QtNDk1NjEtdXMxYWRtaW5PR1JoTWpRd056Z3ROVGsyWlMwME1HTTBMVGs0TmprdE5HRTFPVEEyWmpReU1qZzA=";
+const UPSTASH_VECTOR_URL = API URL ENDPOINT;
+const UPSTASH_VECTOR_TOKEN =YOUR API TOKEN;
 
 // Initialize Upstash Vector index
 export const vectorIndex = new Index({
