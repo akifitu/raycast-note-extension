@@ -14,23 +14,23 @@ export default function Command() {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   async function handleSubmit(values: ReminderFormValues) {
-    try {
-      if (!values.title.trim()) {
-        await showToast({
-          style: Toast.Style.Failure,
-          title: "Error",
-          message: "Title is required",
-        });
-        return;
-      }
+    if (!values.title?.trim()) {
+      await showToast({
+        style: Toast.Style.Failure,
+        title: "Error",
+        message: "Title is required",
+      });
+      return;
+    }
 
+    try {
       setIsSubmitting(true);
 
       // Format the reminder text
       let reminderText = `Reminder: ${values.title}\n`;
 
       // Add content if provided
-      if (values.content.trim()) {
+      if (values.content?.trim()) {
         reminderText += `\n${values.content}\n`;
       }
 

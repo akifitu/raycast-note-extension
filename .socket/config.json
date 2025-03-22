@@ -1,0 +1,10 @@
+{
+  "checks": {
+    "pull-request-alerts": {
+      "enabled": false
+    },
+    "project-report": {
+      "enabled": false
+    }
+  }
+} 
