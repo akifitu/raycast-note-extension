@@ -1,3 +1,6 @@
+// Load environment variables
+import "dotenv/config";
+
 import { showToast, Toast } from "@raycast/api";
 import {
   vectorIndex,

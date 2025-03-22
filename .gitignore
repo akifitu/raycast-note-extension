@@ -25,3 +25,8 @@
 *.bak
 *_fixed.*
 token_fixed.txt
+
+# Environment variables
+*.env
+.env*
+!.env.example
